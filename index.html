@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>V E H I X</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">VEHIX</div>
+      <div class="language-buttons">
+        <button id="button-lenguage-english"
+          onclick="changePageEnglish()">En</button>
+        <button id="button-lenguage-spanish"
+          onclick="changePageSpanish()">Es</button>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- NAV DESKTOP -->
+    <div class="nav-desktop">
+      <a href="#hero">HOME</a>
+      <a href="#suscriptions">SUBSCRIPTIONS</a>
+      <a href="#benefits">BENEFITS</a>
+      <a href="#Testimonials">TESTIMONIALS</a>
+      <a href="#who-are-we about">WHO ARE WE?</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact-us">SUPPORT</a>
+      <a href="#COMPATIBLE">COMPATIBILITY</a>
+    </div>
+
+    <!-- SLIDE MENU MOBILE -->
+    <div class="side-menu" id="sideMenu">
+      <button class="close-btn" onclick="toggleMenu()">✖</button>
+      <a href="#hero">HOME</a>
+      <a href="#suscriptions">SUBSCRIPTIONS</a>
+      <a href="#benefits">BENEFITS</a>
+      <a href="#Testimonials">TESTIMONIALS</a>
+      <a href="#who-are-we about">WHO ARE WE?</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact-us">SUPPORT</a>
+      <a href="#COMPATIBLE">COMPATIBILITY</a>
+    </div>
+
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h1>Meet the smart adapter that protects your vehicle and your
+          wallet</h1>
+        <p>Instantly detect engine problems and avoid unnecessary repair costs.
+          Vehix sends you automatic maintenance alerts for oil changes,
+          technical inspections, tire rotations, and more all from your
+          phone.</p>
+      </div>
+      <div class="hero-image">
+        <img src="/assets/imgs/vehix-intro.png"
+          alt="VEHIX phone, adapter, and laptop">
+      </div>
+    </section>
+
+    <!--Introduction-->
+    <section id="Introduction">
+
+      <h2 class="Introduction title">First time using Vehix?</h2>
+
+      <p class="Introduction description">Instantly detect engine problems and
+        avoid unnecessary repair costs. Vehix sends you automatic maintenance
+        alerts for oil <br> changes, technical inspections, tire rotations, and
+        more all from your phone.</p>
+
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/kbXTYTgzsZ4?si=mDVz8pNXkWwdKUvl"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <br>
+      
+    </section>
+    
+    <!--Subscriptions-->
+    <section id="suscriptions" class="suscriptions-section">
+      <h2 class="section-title-suscriptions">Choose the perfect plan for
+        you</h2>
+
+      <div class="slider-container">
+        <!-- Lado izquierdo: botón -->
+        <div class="slider-side left">
+          <button class="slider-btn" onclick="changeSlide(-1)">&#10094;</button>
+        </div>
+
+        <!-- Contenido del slider -->
+        <div class="slider-main">
+          <div class="slider-wrapper" id="main-wrapper">
+            <!-- PLAN STANDARD -->
+            <div class="plan-card">
+              <div class="plan-info-standar">
+                <h3>PLAN <span>STANDARD</span></h3>
+                <p class="plan-desc">Ideal for owners looking for basic support
+                  in the care of their vehicle.</p>
+                <ul>
+                  <li>Access to the web and mobile application</li>
+                  <li>Preventive maintenance alerts</li>
+                  <li>Recording and displaying <br>
+                    the vehicle's technical history</li>
+                  <li>Assistance with tips and recommendations <br>
+                    from the basic car care library</li>
+                  <li>Real-time vehicle scanning</li>
+                  <li>VEHIX Scanner (30% discount, shipping not included)</li>
+                </ul>
+              </div>
+              <div class="plan-price-standar">
+                <p>S/.</p>
+                <h2>65<span>.00</span></h2>
+                <small>monthly</small>
+              </div>
+            </div>
+
+            <!-- PLAN PRO -->
+            <div class="plan-card-pro">
+              <div class="plan-info-pro">
+                <h3>PLAN <span>PRO</span></h3>
+                <p class="plan-desc"><strong>**Includes the benefits of the
+                    Standard Plan</strong><br>Perfect for drivers or mechanics
+                  looking for expert support and comfort in the care of their
+                  vehicle.</p>
+                <ul>
+                  <li>Technical library and customized to the requirements <br>
+                    of the vehicle.</li>
+                  <li>Statistical data displayed</li>
+                  <li>Problem prognosis</li>
+                  <li>Advanced vehicle status display.</li>
+                  <li>Detection and reading of error codes</li>
+                  <li>Expert analysis</li>
+                  <li>Free VEHIX Scanner (excl. shipping)</li>
+                </ul>
+              </div>
+              <div class="plan-price-pro">
+                <p>S/.</p>
+                <h2>99<span>.99</span></h2>
+                <small>monthly</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado derecho: botón -->
+        <div class="slider-side right">
+          <button class="slider-btn" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- División separada para los bullets -->
+      <div class="slider-footer">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+      </div>
+    </section>
+    
+    <!--Benefits-->
+    <section id="benefits" class="benefits">
+      <div class="section-title"><h2 class="section-title">Benefits</h2></div>
+      <div class="benefits-diagonal">
+        <div class="benefit-item top-left">
+          <div class="benefit-card">
+            <h3>Driver benefits</h3>
+            <ul>
+              <li>Prevention of long-term failures</li>
+              <li>Reduction of costly repair expenses</li>
+              <li>Real-time monitoring of your vehicle's status</li>
+              <li>Recommendations to extend vehicle life</li>
+            </ul>
+          </div>
+          <img
+            src="assets/imgs/img diver.png"
+            alt="Driver icon"
+            class="benefit-icon"
+          />
+        </div>
+
+        <div class="benefit-item bottom-right">
+          <img
+            src="assets/imgs/img mechanic.png"
+            alt="Mechanic icon"
+            class="benefit-icon"
+          />
+          <div class="benefit-card">
+            <h3>Mechanic benefits</h3>
+            <ul>
+              <li>Accurate and fast diagnostics</li>
+              <li>Workshop visibility on the platform</li>
+              <li>Detailed fault analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Testimonials-->
+    <section id="Testimonials">
+
+      <div class="testimonials-1">
+        <div class="title-testimonials">
+          <h1>Testimonials</h1>
+        </div>
+
+        <div class="container-testimonials">
+          <div class="user-test-1 user-left">
+            <img src="assets/imgs/img testi1.png" alt="testil1">
+            <p class="name">Enrrique Iglesias</p>
+            <p class="text">“The ideal app to monitor my vehicle and avoid
+              mishaps.”</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="user-test-1 user-center">
+            <img src="assets/imgs/img testi2.png" alt="testil2">
+            <p class="name">Jhonny Perez</p>
+            <p class="text">““It is a great help to have instant diagnostics, I
+              save a lot of time.””</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="user-test-1 user-right">
+            <img src="assets/imgs/img testi3.png" alt="testil3">
+            <p class="name">María Becerra</p>
+            <p class="text">““It's perfect for me to avoid complications with my
+              car and to have peace of mind about it.””</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Who are we?-->
+    <section id="who-are-we about">
+      <h2 class="title-who">Who are we?</h2>
+      <p class="text-who">
+        Vehix is a multidisciplinary team of young people passionate about
+        technology and automotive innovation. Our mission is to help you <br>
+        take care of your vehicle in a smart, preventive and affordable way.
+        We believe in the power of data, functional design and user experience
+        to transform the way drivers engage with their cars. <br>
+        Together, we seek to build a reliable, clear and useful platform for
+        everyone.
+      </p>
+      <div class="introduction-who">
+        <!--Sergio-->
+        <div class="cart-who">
+          <div class="sergio-card">
+            <img src="assets/imgs/sergio.png" alt="sergio">
+            <h3>Sergio Julca</h3>
+            <p class="description-intro">Estudiante de Ingeniería de Software,
+              apasionado por la programación y el desarrollo de soluciones
+              tecnológicas. Se encarga del diseño de la interfaz de usuario y la
+              experiencia dentro de la aplicación.</p>
+            <div class="technologies">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--Antonio-->
+        <div class="cart-who">
+          <div class="antonio-card">
+            <img src="assets/imgs/antonio.png" alt="antonio">
+            <h3>Antonio Navarro</h3>
+            <p class="description-intro">Entusiasta de la tecnología y la
+              innovación, se encarga de la parte de pruebas y aseguramiento de
+              calidad, asegurando que la aplicación sea confiable y cumpla con
+              las expectativas de los usuarios.</p>
+            <div class="technologies">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--Dayro-->
+        <div class="cart-who">
+          <div class="dayro-card">
+            <img src="assets/imgs/dayron.png" alt="dayro">
+            <h3>Dayro Rios</h3>
+            <p class="description-intro">Estudiante comprometido con la
+              ingeniería de software, responsable de la integración de bases de
+              datos, garantizando que la aplicación almacene y recupere la
+              información de manera segura y rápida.</p>
+            <div class="technologies">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--Vitaly-->
+        <div class="cart-who">
+          <div class="vitaly-card">
+            <img src="assets/imgs/vitaly.png" alt="vitaly">
+            <h3>Vitaly Baca</h3>
+            <p class="description-intro">Apasionado por las tecnologías
+              emergentes, se especializa en la implementación de algoritmos y
+              lógica de negocio, asegurando que la aplicación sea eficiente y
+              fácil de usar.</p>
+            <div class="technologies">
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-instagram"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Moises-->
+        <div class="cart-who">
+          <div class="moises-card">
+            <img src="assets/imgs/moises.png" alt="moises">
+            <h3>Moises Espinoza </h3>
+            <p class="description-intro">Con gran interés en la programación
+              móvil, se enfoca en el desarrollo de la versión para dispositivos
+              móviles de la aplicación, asegurando su buen funcionamiento en
+              diversas plataformas.</p>
+            <div class="technologies">
+              <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Frequently Asked Questions-->
+    <section id="faq">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+
+        <!--First Question-->
+        <div class="faq-item">
+          <button class="faq-question">
+            Does Vehix let me know when my car is due for maintenance?
+            <img src="assets/imgs/expand_more.png" class="icon-toggle"
+              alt="toggle icon">
+          </button>
+          <div class="faq-answer">
+            Yes, Vehix monitors vehicle data and sends you personalized alerts
+            about preventive and corrective maintenance.
+            You'll receive notifications for oil changes, brake inspections,
+            tire rotations, and other critical services to keep your vehicle
+            running smoothly.
+          </div>
+        </div>
+
+        <hr class="faq-divider">
+
+        <!--Second Question-->
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need to have technical knowledge to understand the information
+            provided by the app?
+            <img src="assets/imgs/expand_more.png" class="icon-toggle"
+              alt="toggle icon">
+          </button>
+          <div class="faq-answer">
+            No, the app translates technical data into clear and easy to
+            understand recommendations for any user.
+            Vehix simplifies complex terms, so you can make informed decisions
+            about your vehicle's maintenance without needing a background in
+            mechanics.
+          </div>
+        </div>
+
+        <hr class="faq-divider">
+
+        <!--Third Question-->
+        <div class="faq-item">
+          <button class="faq-question">
+            Does Vehix help me maximize my car's uptime to get more work done?
+            <img src="assets/imgs/expand_more.png" class="icon-toggle"
+              alt="toggle icon">
+          </button>
+          <div class="faq-answer">
+            Yes, it notifies you of failures in time so you don't lose days to
+            unexpected repairs.
+            Early detection of issues minimizes downtime, allowing you to plan
+            repairs efficiently and keep your daily activities on track without
+            costly delays.
+          </div>
+        </div>
+
+        <hr class="faq-divider">
+
+        <!--Fourth Question-->
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I use Vehix to educate the customer about their vehicle problem?
+            <img src="assets/imgs/expand_more.png" class="icon-toggle"
+              alt="toggle icon">
+          </button>
+          <div class="faq-answer">
+            Clear. The reports include descriptions in simple language, ideal to
+            explain in a visual and didactic way.
+            Vehix provides intuitive diagrams, straightforward summaries, and
+            clear recommendations that make it easier for mechanics and service
+            advisors to communicate issues to clients.
+          </div>
+        </div>
+
+        <hr class="faq-divider">
+
+        <!--Fifth Question-->
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need to have technical knowledge to understand the information
+            provided by the app?
+            <img src="assets/imgs/expand_more.png" class="icon-toggle"
+              alt="toggle icon">
+          </button>
+          <div class="faq-answer">
+            Yes, Vehix translates and organizes technical data into clear
+            reports that facilitate problem identification.
+            Even if you're unfamiliar with car mechanics, you can quickly grasp
+            what's happening with your vehicle and take action based on
+            prioritized recommendations.
+          </div>
+        </div>
+
+        <hr class="faq-divider">
+
+        <!--Sixth Question-->
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I keep track of the intensive use I make of the car?
+            <img src="assets/imgs/expand_more.png" class="icon-toggle"
+              alt="toggle icon">
+          </button>
+          <div class="faq-answer">
+            Of course. Vehix records data such as mileage, usage time, driving
+            patterns and more.
+            With this information, you can better manage maintenance schedules,
+            detect overuse patterns early, and optimize your vehicle's
+            performance and longevity.
+          </div>
+        </div>
+
+      </div>
+    </section>
+        <!--VEHIX-IS-COMPATIBLE-->
+    <section id="COMPATIBLE">
+      <h2 class="title-comp">VEHIX IS COMPATIBLE</h2>
+      <p class="tex-comp">With most gasoline and diesel vehicles since ...</p>
+
+      <div class="vehicle-compatible">
+        <div class="card-comp">
+          <div class="car-image">
+            <img src="assets/imgs/sedan.png" alt="SEDAN" />
+          </div>
+          <h3>S E D A N</h3>
+          <hr />
+          <p>1996+ Gas</p>
+        </div>
+
+        <div class="card-comp">
+          <div class="car-image">
+            <img src="assets/imgs/suv.png" alt="SUV" />
+          </div>
+          <h3>S U V</h3>
+          <hr />
+          <p>1996+ Gas</p>
+        </div>
+
+        <div class="card-comp">
+          <div class="car-image">
+            <img src="assets/imgs/pickup.png" alt="PICKUP" />
+          </div>
+          <h3>P I C K U P</h3>
+          <hr />
+          <p>1996+ Gas</p>
+        </div>
+
+        <div class="card-comp">
+          <div class="car-image">
+            <img src="assets/imgs/van.png" alt="VAN" />
+          </div>
+          <h3>V A N</h3>
+          <hr />
+          <p>1996+ Gas</p>
+        </div>
+      </div>
+
+      <p class="tex-card-comp">
+        Required port of Vehix , Most vehicles after 1996
+      </p>
+      
+      <!--Got-questions?-Contact-us-before-signing-up-->
+      <section id="contact-us">
+        <div class="contact-us-header">
+          <h2 class="title-contac">Got questions? Contact us before signing
+            up</h2>
+          <form id="contactForm" onsubmit="submitForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Inquiry Topic:</label>
+            <div class="inquiry-options-custom">
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Platform registration"
+                  required>
+                <span class="radio-btn"></span> Platform registration
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Payment methods">
+                <span class="radio-btn"></span> Payment methods
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Data security">
+                <span class="radio-btn"></span> Data security
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Other">
+                <span class="radio-btn"></span> Other
+              </label>
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">S E N D</button>
+
+            <p class="contact-gmail">------ contact us at gmail:
+              vehix@outlook.com -----</p>
+
+          </form>
+        </div>
+
+      </section>
+
+    </section>
+    
+    <section id="footer-body">
+      <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem-menu">
+            <a href class="icon">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+
+          <li class="icon-elem-menu">
+            <a href class="icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+
+          <li class="icon-elem-menu">
+            <a href class="icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+
+          <li class="icon-elem-menu">
+            <a href class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+
+          <li class="icon-elem-menu">
+            <a href class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <p class="text-menu">2025 - CrewTech</p>
+        </ul>
+      </footer>
+    </section>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>
