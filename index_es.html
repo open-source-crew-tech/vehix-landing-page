@@ -84,9 +84,87 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
       <br>
+      
     </section>
+    
     <!--Subscripciones-->
+    <section id="suscriptions" class="suscriptions-section">
+      <h2 class="section-title-suscriptions">Elige el plan perfecto para ti</h2>
 
+      <div class="slider-container">
+        <!-- Lado izquierdo: botón -->
+        <div class="slider-side left">
+          <button class="slider-btn" onclick="changeSlide(-1)">&#10094;</button>
+        </div>
+
+        <!-- Contenido del slider -->
+        <div class="slider-main">
+          <div class="slider-wrapper" id="main-wrapper">
+            <!-- PLAN STANDARD -->
+            <div class="plan-card">
+              <div class="plan-info-standar">
+                <h3>PLAN <span>STANDARD</span></h3>
+                <p class="plan-desc">Ideal para propietarios que buscan soporte
+                  básico en el cuidado de su vehículo.</p>
+                <ul>
+                  <li>Acceso a la aplicación web y móvil</li>
+                  <li>Alertas de mantenimiento preventivo</li>
+                  <li>Registro y visualización <br> del historial técnico del
+                    vehículo</li>
+                  <li>Asistencia con consejos y recomendaciones <br> de la
+                    biblioteca básica de cuidado vehicular</li>
+                  <li>Escaneo del vehículo en tiempo real</li>
+                  <li>Escáner VEHIX (30% de descuento, envío no incluido)</li>
+                </ul>
+              </div>
+              <div class="plan-price-standar">
+                <p>S/.</p>
+                <h2>65<span>.00</span></h2>
+                <small>mensual</small>
+              </div>
+            </div>
+
+            <!-- PLAN PRO -->
+            <div class="plan-card-pro">
+              <div class="plan-info-pro">
+                <h3>PLAN <span>PRO</span></h3>
+                <p class="plan-desc"><strong>**Incluye los beneficios del Plan
+                    Estándar</strong>
+                  <br>Perfecto para conductores o mecánicos que buscan apoyo
+                  experto y comodidad en el cuidado de su vehículo.</p>
+                <ul>
+                  <li>Biblioteca técnica personalizada según los requerimientos
+                    <br> del vehículo.</li>
+                  <li>Visualización de datos estadísticos</li>
+                  <li>Pronóstico de problemas</li>
+                  <li>Visualización avanzada del estado del vehículo.</li>
+                  <li>Detección y lectura de códigos de error</li>
+                  <li>Análisis experto</li>
+                  <li>Escáner VEHIX gratis (excluye envío)</li>
+                </ul>
+              </div>
+              <div class="plan-price-pro">
+                <p>S/.</p>
+                <h2>99<span>.99</span></h2>
+                <small>mensual</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado derecho: botón -->
+        <div class="slider-side right">
+          <button class="slider-btn" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- División separada para los bullets -->
+      <div class="slider-footer">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+      </div>
+    </section>
+    
     <!--Beneficios-->
     <section id="benefits" class="benefits">
 

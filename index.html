@@ -84,8 +84,87 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
       <br>
+      
     </section>
+    
     <!--Subscriptions-->
+    <section id="suscriptions" class="suscriptions-section">
+      <h2 class="section-title-suscriptions">Choose the perfect plan for
+        you</h2>
+
+      <div class="slider-container">
+        <!-- Lado izquierdo: botón -->
+        <div class="slider-side left">
+          <button class="slider-btn" onclick="changeSlide(-1)">&#10094;</button>
+        </div>
+
+        <!-- Contenido del slider -->
+        <div class="slider-main">
+          <div class="slider-wrapper" id="main-wrapper">
+            <!-- PLAN STANDARD -->
+            <div class="plan-card">
+              <div class="plan-info-standar">
+                <h3>PLAN <span>STANDARD</span></h3>
+                <p class="plan-desc">Ideal for owners looking for basic support
+                  in the care of their vehicle.</p>
+                <ul>
+                  <li>Access to the web and mobile application</li>
+                  <li>Preventive maintenance alerts</li>
+                  <li>Recording and displaying <br>
+                    the vehicle's technical history</li>
+                  <li>Assistance with tips and recommendations <br>
+                    from the basic car care library</li>
+                  <li>Real-time vehicle scanning</li>
+                  <li>VEHIX Scanner (30% discount, shipping not included)</li>
+                </ul>
+              </div>
+              <div class="plan-price-standar">
+                <p>S/.</p>
+                <h2>65<span>.00</span></h2>
+                <small>monthly</small>
+              </div>
+            </div>
+
+            <!-- PLAN PRO -->
+            <div class="plan-card-pro">
+              <div class="plan-info-pro">
+                <h3>PLAN <span>PRO</span></h3>
+                <p class="plan-desc"><strong>**Includes the benefits of the
+                    Standard Plan</strong><br>Perfect for drivers or mechanics
+                  looking for expert support and comfort in the care of their
+                  vehicle.</p>
+                <ul>
+                  <li>Technical library and customized to the requirements <br>
+                    of the vehicle.</li>
+                  <li>Statistical data displayed</li>
+                  <li>Problem prognosis</li>
+                  <li>Advanced vehicle status display.</li>
+                  <li>Detection and reading of error codes</li>
+                  <li>Expert analysis</li>
+                  <li>Free VEHIX Scanner (excl. shipping)</li>
+                </ul>
+              </div>
+              <div class="plan-price-pro">
+                <p>S/.</p>
+                <h2>99<span>.99</span></h2>
+                <small>monthly</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado derecho: botón -->
+        <div class="slider-side right">
+          <button class="slider-btn" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- División separada para los bullets -->
+      <div class="slider-footer">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+      </div>
+    </section>
     
     <!--Benefits-->
     <section id="benefits" class="benefits">
