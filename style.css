@@ -1,4 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a; /* Barra superior negra */
+    padding: 15px 40px;
+  }
+
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .menu-toggle {
+    font-size: 26px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  /*HERO*/
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    gap: 40px;
+    background: #e5e5e5;
+  }
+
+  .hero-text {
+    max-width: 400px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .hero-image img {
+    width: 35vw;
+    height: auto;
+    max-width: none;
+    display: block;
+  }
+  /* ACABADO DE HERO*/
+
+
+  /* SLIDE MENU MOBILE */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .side-menu.active {
+    right: 0;
+  }
+
+  .side-menu a {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .side-menu .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  /* FIANL SLIDE MENU MOBILE */
+
+  /* Estilos responsivos */
+ 
+
+ 
+  
+/* División del navbar */
+
+/* NAV HORIZONTAL DESKTOP */
+.nav-desktop {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  gap: 10px;
+}
+
+.nav-desktop a {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #adebf3;
+  color: #222;
+  transition: background 0.3s ease;
+}
+
+.nav-desktop a:hover {
+  background-color: #9bdce8;
+}
+
+ /* RESPONSIVE */
+ @media (max-width: 900px) {
+  .nav-desktop {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+/* ACABADO DE NAV HORIZONTAL DESKTOP */
+
+/* === Suscriptions Section === */
+.suscriptions-section {
+  background-color: #ccc;
+  padding: 3rem 1rem;
+}
+
+.section-title-suscriptions {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Nueva caja principal con laterales separados */
+.slider-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Laterales de botones */
+.slider-side {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-side.left {
+  background: #ccc;
+}
+
+.slider-side.right {
+  background: #ccc;
+}
+
+.slider-btn {
+  border: none;
+  overflow: hidden;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #ccc;
+}
+
+.slider-btn:hover {
+  color: #111;
+}
+
+/* Contenido principal del slider */
+.slider-main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+/* Cada plan */
+.plan-card {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.plan-card-pro{
+  background: #000;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.plan-info-standar {
+  flex: 2;
+  padding-right: 2rem;
+}
+
+.plan-info-standar h3 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.plan-info-standar ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.plan-info-pro{
+  background: #000;
+  flex: 2;
+  padding-right: 2rem;
+}
+
+.plan-info-pro h3 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.plan-info-pro ul {
+  color: white;
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.plan-info-pro .plan-desc{
+  color: white;
+}
+
+.plan-price-standar {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  align-self: center;
+  max-width: 180px;
+}
+
+.plan-price-pro {
+  flex: 1;
+  background-color: black;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  align-self: center;
+  max-width: 180px;
+}
+
+
+.plan-info-pro h3{
+  text-align: center;
+}
+
+.plan-info-standar h3{
+  text-align: center;
+}
+
+.plan-price-standar p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.plan-price-standar h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.plan-price-standar span {
+  font-size: 1.2rem;
+}
+
+.plan-price small {
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+
+.plan-price-pro p {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.plan-price-pro h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.plan-price-pro span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.plan-price-pro small {
+  color: white;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+
+
+/* Footer separado para bullets */
+.slider-footer {
+  max-width: 1080px;
+  margin: 0.1rem auto 0 auto;
+  background-color: #f4f4f4;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .plan-card , .plan-card-pro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-side {
+    width: 40px;
+  }
+
+  .plan-info-standar, .plan-info-pro {
+    padding: 0;
+  }
+
+  .plan-price-standar, .plan-price-pro {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+/* === ACABADO Suscriptions Section === */
+
+
+/* accordion */
+#faq {
+  padding: 60px 20px;
+  background: #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  max-width: 1800px;
+  width: 95%;
+  margin: auto;
+  background: none;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #e0e0e0; /* GRIS INICIAL */
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 25px;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  background-color: #e0e0e0; /* GRIS PARA PREGUNTA */
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #222;
+  border-radius: 10px;
+}
+
+.faq-question:hover {
+  background: #e0e0e0;
+}
+
+.faq-question img.icon-toggle {
+  width: 10px;
+  height: 8px;
+  transition: transform 0.3s ease;
+  margin-left: 12px;
+}
+
+.faq-answer {
+  display: none;
+  background: white;
+  padding: 20px 25px;
+  font-size: 20px;
+  color: #444;
+  border-top: 1px solid #ccc;
+}
+
+.faq-item.open {
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-divider {
+  border: none;
+  height: 3px;
+  background-color: #ccc;
+  margin: 0 0 10px 0;
+}
+
+/* fin accordion */
+
+
+/*benefits*/
+.section-title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+  justify-content: center;
+}
+.benefits-diagonal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+  
   .benefit-item {
     display: flex;
     align-items: center;
