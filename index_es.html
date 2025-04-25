@@ -515,5 +515,50 @@
         Puerto requerido de Vehix, la mayoría de los vehículos después 1996
       </p>
 
+      <!--Got-questions?-Contact-us-before-signing-up-->
+      <section id="contact-us">
+        <div class="contact-us-header">
+          <h2 class="title-contac">
+            ¿Tienes preguntas? Contáctanos antes de registrarte.</h2>
+          <form id="contactForm" onsubmit="submitForm()">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Tema de la consulta:</label>
+            <div class="inquiry-options-custom">
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Platform registration"
+                  required>
+                <span class="radio-btn"></span> Registro de plataforma
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Payment methods">
+                <span class="radio-btn"></span> Métodos de pago
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Data security">
+                <span class="radio-btn"></span> Seguridad de datos
+              </label>
+              <label class="custom-radio">
+                <input type="radio" name="inquiry" value="Other">
+                <span class="radio-btn"></span> Otros
+              </label>
+            </div>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">S E N D</button>
+
+            <p class="contact-gmail"> Contacta con nosotros en gmail:
+              vehix@outlook.com </p>
+
+          </form>
+        </div>
+
+      </section>
+
  <script src="app.js" type="text/javascript"></script>
 
