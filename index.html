@@ -1,54 +1,48 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>V E H I X</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <div class="logo">VEHIX</div>
-      <div class="language-buttons">
-        <button id="button-lenguage-english"
-          onclick="changePageEnglish()">En</button>
-        <button id="button-lenguage-spanish"
-          onclick="changePageSpanish()">Es</button>
-      </div>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="logo">VEHIX</div> 
+        <div class="language-buttons">
+          <button id="button-lenguage-english" onclick="changePageEnglish()">En</button>
+          <button id="button-lenguage-spanish" onclick="changePageSpanish()">Es</button>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </header>
 
-    <!-- NAV DESKTOP -->
+    <!--nav-desktop-->
     <div class="nav-desktop">
       <a href="#hero">HOME</a>
-      <a href="#suscriptions">SUBSCRIPTIONS</a>
+      <a href="#subscriptions">SUBSCRIPTIONS</a>
       <a href="#benefits">BENEFITS</a>
-      <a href="#Testimonials">TESTIMONIALS</a>
-      <a href="#who-are-we about">WHO ARE WE?</a>
+      <a href="#testimonials">TESTIMONIALS</a>
+      <a href="#who-are-we">WHO ARE WE?</a>
       <a href="#faq">FAQ</a>
       <a href="#contact-us">SUPPORT</a>
-      <a href="#COMPATIBLE">COMPATIBILITY</a>
+      <a href="#compatible">COMPATIBILITY</a>
     </div>
-
-    <!-- SLIDE MENU MOBILE -->
+  
+  <!--slide-menu-mobile-->
     <div class="side-menu" id="sideMenu">
       <button class="close-btn" onclick="toggleMenu()">✖</button>
-      <a href="#hero">HOME</a>
-      <a href="#suscriptions">SUBSCRIPTIONS</a>
-      <a href="#benefits">BENEFITS</a>
-      <a href="#Testimonials">TESTIMONIALS</a>
-      <a href="#who-are-we about">WHO ARE WE?</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact-us">SUPPORT</a>
-      <a href="#COMPATIBLE">COMPATIBILITY</a>
+        <a href="#hero">HOME</a>
+        <a href="#subscriptions">SUBSCRIPTIONS</a>
+        <a href="#benefits">BENEFITS</a>
+        <a href="#testimonials">TESTIMONIALS</a>
+        <a href="#who-are-we">WHO ARE WE?</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact-us">SUPPORT</a>
+        <a href="#compatible">COMPATIBILITY</a>
     </div>
 
     <section id="hero" class="hero">
@@ -59,52 +53,60 @@
           Vehix sends you automatic maintenance alerts for oil changes,
           technical inspections, tire rotations, and more all from your
           phone.</p>
+          <a href="#subscriptions" class="cta-button">Start Protecting Your Car Now</a>
       </div>
+
+      <div class="hero-tools-wrapper">
+        <img src="assets/imgs/tools.png" 
+          alt="Tools Icon" class="hero-tools-icon">
+      </div>
+
       <div class="hero-image">
         <img src="assets/imgs/vehix-intro.png"
           alt="VEHIX phone, adapter, and laptop">
       </div>
+
     </section>
 
-    <!--Introduction-->
-    <section id="Introduction">
+    <!--introduction-->
+    <section id="introduction">
 
-      <h2 class="Introduction title">First time using Vehix?</h2>
+      <h2 class="introduction title">First time using Vehix?</h2>
 
-      <p class="Introduction description">Instantly detect engine problems and
+      <p class="introduction description">Instantly detect engine problems and
         avoid unnecessary repair costs. Vehix sends you automatic maintenance
         alerts for oil <br> changes, technical inspections, tire rotations, and
         more all from your phone.</p>
 
-      <iframe width="560" height="315"
+        <iframe width="560" height="315"
         src="https://www.youtube.com/embed/kbXTYTgzsZ4?si=mDVz8pNXkWwdKUvl"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
       <br>
-      
+        
     </section>
     
-    <!--Subscriptions-->
-    <section id="suscriptions" class="suscriptions-section">
-      <h2 class="section-title-suscriptions">Choose the perfect plan for
+    <!--subscriptions-->
+    <section id="subscriptions" class="subscriptions-section">
+      <h2 class="section-title-subscriptions">Choose the perfect plan for
         you</h2>
 
       <div class="slider-container">
-        <!-- Lado izquierdo: botón -->
+        <!--left-side:button-->
         <div class="slider-side left">
           <button class="slider-btn" onclick="changeSlide(-1)">&#10094;</button>
         </div>
 
-        <!-- Contenido del slider -->
+        <!--slider-content-->
         <div class="slider-main">
           <div class="slider-wrapper" id="main-wrapper">
-            <!-- PLAN STANDARD -->
+            <!--plan-standar-->
             <div class="plan-card">
               <div class="plan-info-standar">
                 <h3>PLAN <span>STANDARD</span></h3>
-                <p class="plan-desc">Ideal for owners looking for basic support
+                <p class="plan-description">Ideal for owners looking for basic support
                   in the care of their vehicle.</p>
                 <ul>
                   <li>Access to the web and mobile application</li>
@@ -124,11 +126,11 @@
               </div>
             </div>
 
-            <!-- PLAN PRO -->
+            <!--plan-pro-->
             <div class="plan-card-pro">
               <div class="plan-info-pro">
                 <h3>PLAN <span>PRO</span></h3>
-                <p class="plan-desc"><strong>**Includes the benefits of the
+                <p class="plan-description"><strong>**Includes the benefits of the
                     Standard Plan</strong><br>Perfect for drivers or mechanics
                   looking for expert support and comfort in the care of their
                   vehicle.</p>
@@ -150,71 +152,75 @@
               </div>
             </div>
           </div>
+
+          <!--separate-division-for-bullets-->
+          <div class="slider-footer">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+          </div>
+
         </div>
 
-        <!-- Lado derecho: botón -->
+        <!--right-side:button-->
         <div class="slider-side right">
           <button class="slider-btn" onclick="changeSlide(1)">&#10095;</button>
         </div>
       </div>
-
-      <!-- División separada para los bullets -->
-      <div class="slider-footer">
-        <span class="dot active" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-      </div>
     </section>
     
-    <!--Benefits-->
+    <!--benefits-->
     <section id="benefits" class="benefits">
-      <div class="section-title"><h2 class="section-title">Benefits</h2></div>
-      <div class="benefits-diagonal">
-        <div class="benefit-item top-left">
-          <div class="benefit-card">
-            <h3>Driver benefits</h3>
-            <ul>
-              <li>Prevention of long-term failures</li>
-              <li>Reduction of costly repair expenses</li>
-              <li>Real-time monitoring of your vehicle's status</li>
-              <li>Recommendations to extend vehicle life</li>
-            </ul>
-          </div>
-          <img
-            src="assets/imgs/img diver.png"
-            alt="Driver icon"
-            class="benefit-icon"
-          />
+      <div class="section-title">
+        <h2 class="section-title">Benefits</h2>
+      </div>
+      
+      <div class="benefits-wrapper">
+        
+        <div class="benefit-card">
+          <img src="assets/imgs/driver.png" class="benefit-icon" />
+          <h3>Driver benefits</h3>
+          <ul>
+            <li>Prevention of long-term failures</li>
+            <li>Reduction of costly repair expenses</li>
+            <li>Real-time monitoring</li>
+            <li>Extend vehicle life</li>
+          </ul>
         </div>
 
-        <div class="benefit-item bottom-right">
-          <img
-            src="assets/imgs/img mechanic.png"
-            alt="Mechanic icon"
-            class="benefit-icon"
-          />
-          <div class="benefit-card">
-            <h3>Mechanic benefits</h3>
-            <ul>
-              <li>Accurate and fast diagnostics</li>
-              <li>Workshop visibility on the platform</li>
-              <li>Detailed fault analysis</li>
-            </ul>
-          </div>
+
+        <div class="benefit-card">
+          <img src="assets/imgs/mechanic.png" class="benefit-icon" />
+          <h3>Mechanic benefits</h3>
+          <ul>
+            <li>Accurate diagnostics</li>
+            <li>Workshop visibility</li>
+            <li>Fault analysis</li>
+          </ul>
         </div>
       </div>
-    </section>
-    
-    <!--Testimonials-->
-    <section id="Testimonials">
+
+      
+      <div class="benefits-cta-container">
+        <div class="benefits-cta-box">
+          <h3>Ready to improve your vehicle care?</h3>
+          <p>Join VEHIX and start monitoring your car with smart technology.</p>
+          <a href="#subscriptions" class="cta-button">Start with us</a>
+        </div>
+      </div>
+    </section>
+
+     <!--testimonials-->
+    <section id="testimonials">
 
       <div class="testimonials-1">
+        
         <div class="title-testimonials">
           <h1>Testimonials</h1>
         </div>
 
         <div class="container-testimonials">
           <div class="user-test-1 user-left">
-            <img src="assets/imgs/img testi1.png" alt="testil1">
+            <img src="assets/imgs/img testi1.png" alt="Enrrique Iglesias">
             <p class="name">Enrrique Iglesias</p>
             <p class="text">“The ideal app to monitor my vehicle and avoid
               mishaps.”</p>
@@ -225,10 +231,10 @@
             <i class="fa-solid fa-star"></i>
           </div>
           <div class="user-test-1 user-center">
-            <img src="assets/imgs/img testi2.png" alt="testil2">
+            <img src="assets/imgs/img testi2.png" alt="Jhonny Perez">
             <p class="name">Jhonny Perez</p>
-            <p class="text">““It is a great help to have instant diagnostics, I
-              save a lot of time.””</p>
+            <p class="text">“It is a great help to have instant diagnostics, I
+              save a lot of time.”</p>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -236,10 +242,10 @@
             <i class="fa-regular fa-star"></i>
           </div>
           <div class="user-test-1 user-right">
-            <img src="assets/imgs/img testi3.png" alt="testil3">
+            <img src="assets/imgs/img testi3.png" alt="María Becerra">
             <p class="name">María Becerra</p>
-            <p class="text">““It's perfect for me to avoid complications with my
-              car and to have peace of mind about it.””</p>
+            <p class="text">“It's perfect for me to avoid complications with my
+              car and to have peace of mind about it.”</p>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -250,9 +256,9 @@
 
       </div>
     </section>
-
-    <!--Who are we?-->
-    <section id="who-are-we about">
+    
+    <!--who-are-we?-->
+    <section id="who-are-we" class="about">
       <h2 class="title-who">Who are we?</h2>
       <p class="text-who">
         Vehix is a multidisciplinary team of young people passionate about
@@ -264,15 +270,12 @@
         everyone.
       </p>
       <div class="introduction-who">
-        <!--Sergio-->
+        <!--sergio-->
         <div class="cart-who">
           <div class="sergio-card">
-            <img src="assets/imgs/sergio.png" alt="sergio">
+            <img src="assets/imgs/sergio.png" alt="Sergio">
             <h3>Sergio Julca</h3>
-            <p class="description-intro">Estudiante de Ingeniería de Software,
-              apasionado por la programación y el desarrollo de soluciones
-              tecnológicas. Se encarga del diseño de la interfaz de usuario y la
-              experiencia dentro de la aplicación.</p>
+            <p class="description-intro">Software Engineering student, passionate about programming and developing technological solutions. He is responsible for designing the user interface and the in-app experience.</p>
             <div class="technologies">
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-square-facebook"></i>
@@ -282,15 +285,12 @@
           </div>
         </div>
 
-        <!--Antonio-->
+        <!--antonio-->
         <div class="cart-who">
           <div class="antonio-card">
-            <img src="assets/imgs/antonio.png" alt="antonio">
+            <img src="assets/imgs/antonio.png" alt="Antonio">
             <h3>Antonio Navarro</h3>
-            <p class="description-intro">Entusiasta de la tecnología y la
-              innovación, se encarga de la parte de pruebas y aseguramiento de
-              calidad, asegurando que la aplicación sea confiable y cumpla con
-              las expectativas de los usuarios.</p>
+            <p class="description-intro">A technology and innovation enthusiast, he is responsible for testing and quality assurance, ensuring the app is reliable and meets user expectations.</p>
             <div class="technologies">
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-square-facebook"></i>
@@ -299,15 +299,12 @@
           </div>
         </div>
 
-        <!--Dayro-->
+        <!--dayro-->
         <div class="cart-who">
           <div class="dayro-card">
-            <img src="assets/imgs/dayron.png" alt="dayro">
+            <img src="assets/imgs/dayron.png" alt="Dayro">
             <h3>Dayro Rios</h3>
-            <p class="description-intro">Estudiante comprometido con la
-              ingeniería de software, responsable de la integración de bases de
-              datos, garantizando que la aplicación almacene y recupere la
-              información de manera segura y rápida.</p>
+            <p class="description-intro">A student committed to software engineering, he is responsible for database integration, ensuring the app stores and retrieves information securely and quickly.</p>
             <div class="technologies">
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-instagram"></i>
@@ -316,15 +313,12 @@
           </div>
         </div>
 
-        <!--Vitaly-->
+        <!--vitaly-->
         <div class="cart-who">
           <div class="vitaly-card">
-            <img src="assets/imgs/vitaly.png" alt="vitaly">
+            <img src="assets/imgs/vitaly.png" alt="Vitaly">
             <h3>Vitaly Baca</h3>
-            <p class="description-intro">Apasionado por las tecnologías
-              emergentes, se especializa en la implementación de algoritmos y
-              lógica de negocio, asegurando que la aplicación sea eficiente y
-              fácil de usar.</p>
+            <p class="description-intro">Passionate about emerging technologies, he specializes in implementing algorithms and business logic, ensuring the app is efficient and easy to use.</p>
             <div class="technologies">
               <i class="fa-brands fa-linkedin"></i>
               <i class="fa-brands fa-instagram"></i>
@@ -333,18 +327,14 @@
           </div>
         </div>
 
-        <!--Moises-->
+        <!--piero-->
         <div class="cart-who">
-          <div class="moises-card">
-            <img src="assets/imgs/moises.png" alt="moises">
-            <h3>Moises Espinoza </h3>
-            <p class="description-intro">Con gran interés en la programación
-              móvil, se enfoca en el desarrollo de la versión para dispositivos
-              móviles de la aplicación, asegurando su buen funcionamiento en
-              diversas plataformas.</p>
+          <div class="piero-card">
+            <img src="assets/imgs/moises.png" alt="Moises">
+            <h3>Moises Espinoza</h3>
+            <p class="description-intro">With a keen interest in mobile programming, he focuses on developing the mobile version of the app, ensuring it runs smoothly on various platforms.</p>
             <div class="technologies">
               <i class="fa-brands fa-linkedin"></i>
-
             </div>
           </div>
         </div>
@@ -352,17 +342,17 @@
       </div>
     </section>
 
-    <!--Frequently Asked Questions-->
+    <!--frequently-asked-questions-->
     <section id="faq">
       <h2 class="faq-title">Frequently Asked Questions</h2>
       <div class="faq-container">
 
-        <!--First Question-->
+        <!--first-question-->
         <div class="faq-item">
           <button class="faq-question">
             Does Vehix let me know when my car is due for maintenance?
-            <img src="assets/imgs/expand_more.png" class="icon-toggle"
-              alt="toggle icon">
+            <img src="assets/imgs/expand-more.png" class="icon-toggle"
+              alt="Toggle icon">
           </button>
           <div class="faq-answer">
             Yes, Vehix monitors vehicle data and sends you personalized alerts
@@ -375,13 +365,13 @@
 
         <hr class="faq-divider">
 
-        <!--Second Question-->
+        <!--second-question-->
         <div class="faq-item">
           <button class="faq-question">
             Do I need to have technical knowledge to understand the information
             provided by the app?
-            <img src="assets/imgs/expand_more.png" class="icon-toggle"
-              alt="toggle icon">
+            <img src="assets/imgs/expand-more.png" class="icon-toggle"
+              alt="Toggle icon">
           </button>
           <div class="faq-answer">
             No, the app translates technical data into clear and easy to
@@ -394,12 +384,12 @@
 
         <hr class="faq-divider">
 
-        <!--Third Question-->
+        <!--third-question-->
         <div class="faq-item">
           <button class="faq-question">
             Does Vehix help me maximize my car's uptime to get more work done?
-            <img src="assets/imgs/expand_more.png" class="icon-toggle"
-              alt="toggle icon">
+            <img src="assets/imgs/expand-more.png" class="icon-toggle"
+              alt="Toggle icon">
           </button>
           <div class="faq-answer">
             Yes, it notifies you of failures in time so you don't lose days to
@@ -412,12 +402,12 @@
 
         <hr class="faq-divider">
 
-        <!--Fourth Question-->
+        <!--fourth-question-->
         <div class="faq-item">
           <button class="faq-question">
             Can I use Vehix to educate the customer about their vehicle problem?
-            <img src="assets/imgs/expand_more.png" class="icon-toggle"
-              alt="toggle icon">
+            <img src="assets/imgs/expand-more.png" class="icon-toggle"
+              alt="Toggle icon">
           </button>
           <div class="faq-answer">
             Clear. The reports include descriptions in simple language, ideal to
@@ -430,13 +420,13 @@
 
         <hr class="faq-divider">
 
-        <!--Fifth Question-->
+        <!--fifth-question-->
         <div class="faq-item">
           <button class="faq-question">
             Do I need to have technical knowledge to understand the information
             provided by the app?
-            <img src="assets/imgs/expand_more.png" class="icon-toggle"
-              alt="toggle icon">
+            <img src="assets/imgs/expand-more.png" class="icon-toggle"
+              alt="Toggle icon">
           </button>
           <div class="faq-answer">
             Yes, Vehix translates and organizes technical data into clear
@@ -449,12 +439,12 @@
 
         <hr class="faq-divider">
 
-        <!--Sixth Question-->
+        <!--sixth-question-->
         <div class="faq-item">
           <button class="faq-question">
             Can I keep track of the intensive use I make of the car?
-            <img src="assets/imgs/expand_more.png" class="icon-toggle"
-              alt="toggle icon">
+            <img src="assets/imgs/expand-more.png" class="icon-toggle"
+              alt="Toggle icon">
           </button>
           <div class="faq-answer">
             Of course. Vehix records data such as mileage, usage time, driving
@@ -466,9 +456,14 @@
         </div>
 
       </div>
+
+      <div class="cta-bottom-faq">
+        <a href="#subscriptions" class="cta-button">Empieza con Vehix ahora</a>
+      </div>
     </section>
-        <!--VEHIX-IS-COMPATIBLE-->
-    <section id="COMPATIBLE">
+
+    <!--vehix-is-compatible-->
+    <section id="compatible">
       <h2 class="title-comp">VEHIX IS COMPATIBLE</h2>
       <p class="tex-comp">With most gasoline and diesel vehicles since ...</p>
 
@@ -513,8 +508,8 @@
       <p class="tex-card-comp">
         Required port of Vehix , Most vehicles after 1996
       </p>
-      
-      <!--Got-questions?-Contact-us-before-signing-up-->
+
+      <!--got-questions?-contact-us-before-signing-up-->
       <section id="contact-us">
         <div class="contact-us-header">
           <h2 class="title-contac">Got questions? Contact us before signing
@@ -557,7 +552,7 @@
           </form>
         </div>
 
-      </section>
+        </section>
 
     </section>
     
