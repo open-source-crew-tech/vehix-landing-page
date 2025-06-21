@@ -14,6 +14,9 @@
     <header>
         <div class="logo">VEHIX</div> 
         <div class="language-buttons">
+          <a href="https://crewtech-vehix-frontend-an-git-62e942-sergios-projects-90b6ad67.vercel.app" class="cta-button-recurrent">
+            Comienza ahora
+          </a>
           <button id="button-lenguage-english" onclick="changePageEnglish()">En</button>
           <button id="button-lenguage-spanish" onclick="changePageSpanish()">Es</button>
         </div>
@@ -28,7 +31,6 @@
       <a href="#testimonials">TESTIMONIOS</a>
       <a href="#who-are-we">¿QUIÉNES SOMOS?</a>
       <a href="#faq">PREGUNTAS FRECUENTES</a>
-      <a href="#contact-us">SOPORTE</a>
       <a href="#compatible">COMPATIBILIDAD</a>
     </div>
   
@@ -41,7 +43,6 @@
         <a href="#testimonials">TESTIMONIOS</a>
         <a href="#who-are-we">¿QUIÉNES SOMOS?</a>
         <a href="#faq">PREGUNTAS FRECUENTES</a>
-        <a href="#contact-us">SOPORTE</a>
         <a href="#compatible">COMPATIBILIDAD</a>
     </div>
     <section id="hero" class="hero">
@@ -194,16 +195,7 @@
           </ul>
         </div>
       </div>
-
-      <div class="benefits-cta-container">
-        <div class="benefits-cta-box">
-          <h3>¿Listo para mejorar el cuidado de tu vehículo?</h3>
-          <p>Únete a VEHIX y empieza a monitorear tu auto con tecnología inteligente.</p>
-          <a href="#subscriptions" class="cta-button">Empieza con nosotros</a>
-        </div>
-      </div>
-
-    </section>
+    </section>
 
     <!--testimonials-->
     <section id="testimonials">
@@ -215,7 +207,7 @@
 
         <div class="container-testimonials">
           <div class="user-test-1 user-left">
-            <img src="assets/imgs/img testi1.png" alt="Enrrique Iglesias">
+            <img src="assets/imgs/enrrique-iglesias.png" alt="Enrrique Iglesias">
             <p class="name">Enrrique Iglesias</p>
             <p class="text">“La aplicación ideal para monitorear mi vehículo y
               evitar accidentes.”</p>
@@ -226,7 +218,7 @@
             <i class="fa-solid fa-star"></i>
           </div>
           <div class="user-test-1 user-center">
-            <img src="assets/imgs/img testi2.png" alt="Jhonny Perez">
+            <img src="assets/imgs/jhonny-perez.png" alt="Jhonny Perez">
             <p class="name">Jhonny Perez</p>
             <p class="text">“Es de gran ayuda tener diagnósticos instantáneos,
               me ahorra mucho tiempo.”</p>
@@ -237,7 +229,7 @@
             <i class="fa-regular fa-star"></i>
           </div>
           <div class="user-test-1 user-right">
-            <img src="assets/imgs/img testi3.png" alt="María Becerra">
+            <img src="assets/imgs/maria-becerra.png" alt="María Becerra">
             <p class="name">María Becerra</p>
             <p class="text">“Es perfecto para evitar complicaciones con mi coche
               y tener tranquilidad.”</p>
@@ -304,7 +296,7 @@
         <!--dayro-->
         <div class="cart-who">
           <div class="dayro-card">
-            <img src="assets/imgs/dayron.png" alt="Dayro">
+            <img src="assets/imgs/dayro.png" alt="Dayro">
             <h3>Dayro Rios</h3>
             <p class="description-intro">Estudiante comprometido con la
               ingeniería de software, responsable de la integración de bases de
@@ -464,9 +456,6 @@
             su vehículo.
           </div>
         </div>
-        <div class="cta-bottom-faq">
-          <a href="#subscriptions" class="cta-button">Empieza con Vehix ahora</a>
-        </div>
       </div>
     </section>
     
@@ -519,51 +508,12 @@
         Puerto requerido de Vehix, la mayoría de los vehículos después 1996
       </p>
 
-      <!--got-questions?-contact-us-before-signing-up-->
-      <section id="contact-us">
-        <div class="contact-us-header">
-          <h2 class="title-contac">
-            ¿Tienes preguntas? Contáctanos antes de registrarte.</h2>
-          <form id="contactForm" onsubmit="submitForm()">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+      <div class="cta-button-container">
+        <a href="https://crewtech-vehix-frontend-an-git-62e942-sergios-projects-90b6ad67.vercel.app" class="cta-button-rational">Prueba hoy mismo nuestra aplicacion!</a>
+      </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label>Tema de la consulta:</label>
-            <div class="inquiry-options-custom">
-              <label class="custom-radio">
-                <input type="radio" name="inquiry" value="Platform registration"
-                  required>
-                <span class="radio-btn"></span> Registro de plataforma
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="inquiry" value="Payment methods">
-                <span class="radio-btn"></span> Métodos de pago
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="inquiry" value="Data security">
-                <span class="radio-btn"></span> Seguridad de datos
-              </label>
-              <label class="custom-radio">
-                <input type="radio" name="inquiry" value="Other">
-                <span class="radio-btn"></span> Otros
-              </label>
-            </div>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">S E N D</button>
-
-            <p class="contact-gmail"> Contacta con nosotros en gmail:
-              vehix@outlook.com </p>
-
-          </form>
-        </div>
-
-      </section>
     </section>
+
     
     <section id="footer-body">
       <footer class="footer">
