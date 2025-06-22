@@ -1142,3 +1142,8 @@ header {
     width: 60px;
   }
 }
+
+.about-video iframe {
+  display: block;
+  margin: 0 auto;
+}
